@@ -1,0 +1,218 @@
+/* Smooth Scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* General Styling */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Background Images */
+.home-page{
+    background-image: url("home-bg.jpg");
+}
+
+.about-page{
+    background-image: url("about-bg.jpg");
+}
+
+.contact-page{
+    background-image: url("contact-bg.jpg");
+}
+
+/* Shared Background Styling */
+.home-page,
+.about-page,
+.contact-page{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+header{
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li{
+    display: inline;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover Effects */
+.nav-links a:hover{
+    color: #00bfff;
+}
+
+/* Main Content */
+main{
+    background-color: rgba(0,0,0,0.6);
+    margin: 30px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Headings */
+h1, h2{
+    text-align: center;
+}
+
+/* Paragraphs */
+p{
+    font-size: 17px;
+}
+
+/* Images */
+img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Videos */
+video{
+    display: block;
+    margin: auto;
+    width: 70%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Skills List */
+ul{
+    padding-left: 20px;
+}
+
+/* Form Styling */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea{
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+input[type="submit"]{
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media screen and (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    main{
+        margin: 15px;
+    }
+
+    video{
+        width: 90%;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .nav-links{
+        width: 100%;
+    }
+
+    .nav-links a{
+        display: block;
+        padding: 10px;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 5px;
+    }
+
+    img{
+        width: 180px;
+    }
+
+    main{
+        padding: 15px;
+    }
+}
